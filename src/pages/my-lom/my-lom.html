@@ -1,0 +1,114 @@
+<!--
+  Generated template for the MyLomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>MyLom</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="lomarea">
+      <ion-segment-button value="lgb">
+        LGB Members
+      </ion-segment-button>
+      <ion-segment-button value="members">
+        Members
+      </ion-segment-button>
+      <ion-segment-button value="pastpresident">
+        Past-Presidents
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <div [ngSwitch]="lomarea">
+    <ion-list *ngSwitchCase="'lgb'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'members'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'pastpresident'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <h2><strong>Ruby</strong></h2>
+        <ion-icon name="call"> +91 9876543210</ion-icon>
+        <ion-icon name="mail"> geomeo@gmail.com</ion-icon>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>

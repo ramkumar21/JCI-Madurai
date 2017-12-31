@@ -1,0 +1,80 @@
+<!--
+  Generated template for the AboutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>ABOUT</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<!--
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+     
+    </ion-list-header>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Vision
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Mission
+    </a>
+    <a ion-item (click)="openModal({charNum: 0})">
+      Founder's Perspective
+    </a>
+    <a ion-item (click)="segueToCreedPage()">
+      Creed
+    </a>
+    <a ion-item (click)="segueToKotpaduPage()">
+      ஜேஸிஐ கோட்பாடு
+    </a>
+  </ion-list>
+
+</ion-content>
+-->
+<ion-content padding>
+<ion-grid>
+	<ion-row>
+		<ion-col>
+		<button ion-button (click)="openModal({charNum: 0})" round color="danger">
+			<ion-icon color="dark">Vision</ion-icon>
+		</button>
+		</ion-col>
+		<ion-col>
+		<button ion-button (click)="openModal({charNum: 0})" round>
+			<ion-icon>Mission</ion-icon>
+		</button>
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col>
+		<button ion-button (click)="openModal({charNum: 0})" round color="dark">
+			<ion-icon>Founder's <br>Perspective</ion-icon>
+		</button>
+		</ion-col>
+		<ion-col>
+		<button ion-button (click)="segueToCreedPage()" round color="secondary">
+			<ion-icon>Creed</ion-icon>
+		</button>
+		</ion-col>
+	</ion-row>
+
+	<ion-row>
+		<ion-col></ion-col>
+		<ion-col>
+		<button style="width:150px;height:75px" ion-button (click)="segueToKotpaduPage()" color="light">
+			<ion-icon>கோட்பாடு</ion-icon>
+		</button>
+		</ion-col>
+		<ion-col></ion-col>
+	</ion-row>
+</ion-grid>	
+
