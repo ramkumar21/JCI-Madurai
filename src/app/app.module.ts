@@ -14,8 +14,15 @@ import { CreedPage } from '../pages/creed/creed';
 import { KotpaduPage } from '../pages/kotpadu/kotpadu';
 
 import { ModalContentPage } from '../pages/about/modal-content';
-import { ModalBusinessPage } from '../pages/business/modal-business';
-
+import { Bus1Page } from '../pages/business/bus1';
+import { Bus2Page } from '../pages/business/bus2';
+import { Bus3Page } from '../pages/business/bus3';
+import { Bus4Page } from '../pages/business/bus4';
+import { Bus5Page } from '../pages/business/bus5';
+import { Bus6Page } from '../pages/business/bus6';
+import { Bus7Page } from '../pages/business/bus7';
+import { Bus8Page } from '../pages/business/bus8';
+import { CompanyPage } from '../pages/business/company';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +41,15 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     CreedPage,
     KotpaduPage,
     ModalContentPage,
-    ModalBusinessPage,
+    Bus1Page,
+    Bus2Page,
+    Bus3Page,
+    Bus4Page,
+    Bus5Page,
+    Bus6Page,
+    Bus7Page,
+    Bus8Page,
+    CompanyPage,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +69,15 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
     CreedPage,
     KotpaduPage,
     ModalContentPage,
-    ModalBusinessPage,
+    Bus1Page,
+    Bus2Page,
+    Bus3Page,
+    Bus4Page,
+    Bus5Page,
+    Bus6Page,
+    Bus7Page,
+    Bus8Page,
+    CompanyPage,    
   ],
   providers: [
     StatusBar,

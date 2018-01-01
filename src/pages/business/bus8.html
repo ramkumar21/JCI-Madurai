@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Business1
+    </ion-title>
+    <ion-buttons left>
+            <button ion-button icon-only (click)="dismiss()">
+                <ion-icon name="arrow-back"></ion-icon>
+            </button>
+        </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+  <ion-row (click)="openModal({charNum: 0})">
+       <ion-item>
+       <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <ion-card>
+          <ion-card-content>
+            <h2 style="font-weight:800" text-uppercase>Company1</h2>
+            <ion-note>Raj Kiran
+            </ion-note>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+  </ion-row>
+
+  <ion-row (click)="openModal({charNum: 1})">
+      <ion-item>
+      <ion-thumbnail item-start>
+          <img src="assets/img/empty-profile.png">
+        </ion-thumbnail>
+        <ion-card>
+          <ion-card-content>
+            <h2 style="font-weight:800" text-uppercase>Company2</h2>
+            <ion-note>Ajith
+            </ion-note>
+          </ion-card-content>
+        </ion-card>
+      </ion-item>
+  </ion-row>
+
+</ion-grid>
+</ion-content>
