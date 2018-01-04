@@ -17,5 +17,20 @@
 
 
 <ion-content padding>
-
+	<ion-item style="text-align: center;"><h2><strong>Looking for Help?</strong></h2>
+		<h4>Feel free to contact us</h4>
+		
+	</ion-item>
+	<ion-card>
+	  <img src="assets/img/geomeologo.png">
+	</ion-card>
+	<ion-item>
+	<ion-icon name="call" (click)="call()">  +91 8015005001</ion-icon>
+	</ion-item>
+	<ion-item>
+	<ion-icon name="mail" (click)="sendEmail()">  info@geomeoinformatics.com</ion-icon>
+	</ion-item>
+	<ion-item>
+		 <ion-icon name="globe" (click)="openWebpage(url)"> www.geomeoinformatics.com </ion-icon>
+	</ion-item>
 </ion-content>

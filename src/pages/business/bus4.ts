@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 
-import { ModalController, NavController,Platform, NavParams, ViewController } from 'ionic-angular';
+import { ModalController, NavController, NavParams, ViewController } from 'ionic-angular';
 import { CompanyPage } from './company';
 
 
 @Component({
+selector: 'page-bus',
   templateUrl: 'bus4.html'
 })
 export class Bus4Page {

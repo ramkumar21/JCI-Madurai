@@ -10,6 +10,7 @@ import { EventsPage } from '../pages/events/events';
 import { HelpPage } from '../pages/help/help';
 
 @Component({
+  selector: 'page-app',
   templateUrl: 'app.html'
 })
 export class MyApp {

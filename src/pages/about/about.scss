@@ -1,4 +1,15 @@
-
+page-about {
+.toolbar-background-md{
+	background:#034594;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default
+{
+	color:#ffffff;
+}
+.toolbar-title-md
+{
+	color:#ffffff;
+}
 .button-round-md{
 	width:10rem;
 	height:10rem;
@@ -6,4 +17,7 @@
 .col{
 	text-align:-webkit-center;
 }
-
+.button-md{
+	background-color: #1976D2;
+}
+}

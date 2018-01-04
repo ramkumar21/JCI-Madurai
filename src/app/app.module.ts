@@ -24,6 +24,10 @@ import { Bus7Page } from '../pages/business/bus7';
 import { Bus8Page } from '../pages/business/bus8';
 import { CompanyPage } from '../pages/business/company';
 
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { CallNumber } from '@ionic-native/call-number';
+import { EmailComposer } from '@ionic-native/email-composer';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicImageViewerModule } from 'ionic-img-viewer';
@@ -82,7 +86,10 @@ import { IonicImageViewerModule } from 'ionic-img-viewer';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    InAppBrowser,
+    CallNumber,
+    EmailComposer,
   ]
 })
 export class AppModule {}

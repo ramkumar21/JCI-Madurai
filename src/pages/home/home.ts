@@ -21,8 +21,8 @@ export class HomePage {
   constructor(public navCtrl: NavController, public navParams: NavParams)
    {
   this.ImageArray=[
-  {'image':'../../assets/imgs/1.jpg'},
-  {'image':'../../assets/imgs/2.jpg'}
+  {'image':'../../assets/img/1.jpg'},
+  {'image':'../../assets/img/2.jpg'}
   ]
  
   }}

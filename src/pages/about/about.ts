@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 
-import { ModalController, NavController,Platform, NavParams, ViewController } from 'ionic-angular';
+import { ModalController, NavController, NavParams } from 'ionic-angular';
 import { ModalContentPage } from './modal-content';
 import { CreedPage } from '../creed/creed';
 import { KotpaduPage } from '../kotpadu/kotpadu';
 
 @Component({
+  selector: 'page-about',
   templateUrl: 'about.html'
 })
 export class AboutPage {

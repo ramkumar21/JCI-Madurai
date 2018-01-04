@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { ModalController, Platform } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { Bus1Page } from './bus1';
 import { Bus2Page } from './bus2';
 import { Bus3Page } from './bus3';

@@ -1,4 +1,4 @@
-page-home {
+page-home{
 ion-slides {
   display: block;
   width: 100%;
@@ -6,5 +6,16 @@ ion-slides {
 }
 img{
 	height:50%;
+}
+.toolbar-background-md{
+	background:#034594;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default
+{
+	color:#ffffff;
+}
+.toolbar-title-md
+{
+	color:#ffffff;
 }
 }

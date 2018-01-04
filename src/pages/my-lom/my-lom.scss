@@ -1,6 +1,24 @@
+page-my-lom{
+.toolbar-background-md{
+	background:#034594;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default
+{
+	color:#ffffff;
+}
+.toolbar-title-md
+{
+	color:#ffffff;
+}
 .label{
 overflow: inherit ;
   text-overflow: inherit ;
   white-space: normal ;
   color:#000000;
   }
+.segment-md .segment-button{
+	color: #ffffff;
+}
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+border-color: #ffffff;
+ }}

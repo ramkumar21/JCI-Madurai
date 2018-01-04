@@ -1,14 +1,8 @@
 import { Component } from '@angular/core';
 
 import { Platform, NavParams, ViewController } from 'ionic-angular';
-import { Bus1Page } from './bus1';
-import { Bus2Page } from './bus2';
-import { Bus3Page } from './bus3';
-import { Bus4Page } from './bus4';
-import { Bus5Page } from './bus5';
-import { Bus6Page } from './bus6';
-import { Bus7Page } from './bus7';
-import { Bus8Page } from './bus8';
+import { CallNumber } from '@ionic-native/call-number';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @Component({
   template:  `
@@ -33,7 +27,8 @@ import { Bus8Page } from './bus8';
         <ion-item>{{item.name}}</ion-item>
         <ion-item>{{item.profession}}</ion-item>
         <ion-item>{{item.industrytype}}</ion-item>
-        <ion-item>{{item.contact}}</ion-item>
+        <ion-item (click)="call(item.contact)">{{item.contact}}</ion-item>
+        <ion-item (click)="sendEmail(item.email)">{{item.email}}</ion-item>
         <ion-item>{{item.description}}</ion-item>
       </ion-item>
   </ion-list>
@@ -46,7 +41,9 @@ export class CompanyPage {
   constructor(
     public platform: Platform,
     public params: NavParams,
-    public viewCtrl: ViewController
+    public viewCtrl: ViewController,
+    private emailComposer: EmailComposer, 
+    private callNumber: CallNumber
   ) {
     var characters = [
       {
@@ -55,8 +52,9 @@ export class CompanyPage {
           { company: 'Asser',
             name: 'RajKiran', 
             profession: 'Owner',
-            industrytype: 'Building and COnstruction',
-            contact: '+91-9876543210',
+            industrytype: 'Building and Construction',
+            contact: '+91-9566709817',
+            email: 'info@gmail.com',
             description: 'Electrical Jobs',
              },
         ]
@@ -66,8 +64,9 @@ export class CompanyPage {
         items: [
           { title: 'RajKiran', 
             profession: 'Owner',
-            industrytype: 'Building and COnstruction',
-            contact: '+91-9876543210',
+            industrytype: 'Building and Construction',
+            contact: '+91-9566709924',
+            email: 'info@gmail.com',
             description: 'Electrical Jobs',
              },
         ]
@@ -78,5 +77,19 @@ export class CompanyPage {
 
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+
+  call(a){
+ setTimeout(() => {
+      let tel = a;
+      window.open(`tel:${tel}`, '_system');
+    },100);
+  }
+
+
+
+  sendEmail(b){
+  let mailto = b;
+  window.open(`mailto:${mailto}`, '_system');
   }
 }

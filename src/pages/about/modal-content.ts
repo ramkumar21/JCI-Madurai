@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 import { Platform, NavParams, ViewController } from 'ionic-angular';
-import { AboutPage } from './about';
+
 
 @Component({
+  selector: 'page-modalcon',
   template:  `
 <ion-header>
   <ion-toolbar>

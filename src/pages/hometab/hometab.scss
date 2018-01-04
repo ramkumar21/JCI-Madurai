@@ -1,3 +1,19 @@
 page-hometab {
-
+.tabs-md .tabbar{
+	background:#034594;
+}
+.tabs-md .tab-button[aria-selected=true]
+{
+	color: #85afff;
+}
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+	color: #85afff;	
+}
+.tabs-md .tab-button[aria-selected=false]
+{
+	color: #ffffff;
+}
+.tabs-md .tab-button[aria-selected=false] .tab-button-icon{
+	color: #ffffff;	
+}
 }
