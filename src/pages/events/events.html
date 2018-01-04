@@ -17,6 +17,12 @@
 
 
 <ion-content padding>
+  <ion-item>
+    <ion-row>
+    <ion-icon name="alert"></ion-icon>&nbsp; &nbsp;
+    <h2>Tap the card to know details!</h2>
+  </ion-row>
+  </ion-item>
   <ion-card *ngFor="let event of eventList" (click)="takeToDetailPage(event.id)">
     <ion-card-content>
         <ion-card-title>{{event?.eventName}}</ion-card-title>
