@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,
+         LoadingController, Loading} from 'ionic-angular';
+import { EventsProvider } from  '../../providers/events/events.provider';
+import { EventDetailPage } from '../event-detail/event-detail';
 
-/**
- * Generated class for the EventsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -15,11 +13,34 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class EventsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public eventList: Array<any>;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public eventProvider: EventsProvider, public loadingCtrl: LoadingController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EventsPage');
+    const loading: Loading = this.loadingCtrl.create();
+    loading.present();
+
+    this.eventProvider.getEventList().on('value', eventListSnapshot=>{
+        this.eventList = [];
+        eventListSnapshot.forEach(snap => {
+          this.eventList.push({
+            id: snap.key,
+            eventName: snap.val().eventName,
+            eventDate: snap.val().eventDate,
+            eventTime: snap.val().eventTime,
+            eventPlace: snap.val().eventPlace,
+            });
+          return false;
+        });
+        loading.dismiss();
+    });
+  }
+
+  takeToDetailPage(eventId): void{
+    this.navCtrl.push(EventDetailPage, {'eventId': eventId });
   }
 
 }

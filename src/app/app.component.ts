@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import firebase from "firebase";
+import { FIREBASE_CONFIG } from './app.firebase.config';
 
 import { HometabPage } from '../pages/hometab/hometab';
 import { MyLomPage } from '../pages/my-lom/my-lom';
@@ -22,6 +24,8 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
+    firebase.initializeApp(FIREBASE_CONFIG);
+    
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HometabPage },
