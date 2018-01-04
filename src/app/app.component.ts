@@ -5,7 +5,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HometabPage } from '../pages/hometab/hometab';
 import { MyLomPage } from '../pages/my-lom/my-lom';
-import { BusinessPage } from '../pages/business/business';
 import { EventsPage } from '../pages/events/events';
 import { HelpPage } from '../pages/help/help';
 
@@ -27,7 +26,6 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HometabPage },
       { title: 'MyLom', component: MyLomPage },
-      { title: 'Business', component: BusinessPage },
       { title: 'Events', component: EventsPage },
       { title: 'Help', component: HelpPage },
     ];

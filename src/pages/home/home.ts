@@ -22,7 +22,11 @@ export class HomePage {
    {
   this.ImageArray=[
   {'image':'../../assets/img/1.jpg'},
-  {'image':'../../assets/img/2.jpg'}
+  {'image':'../../assets/img/2.jpg'},
+  {'image':'../../assets/img/5.jpg'},
+  {'image':'../../assets/img/6.jpg'},
+  {'image':'../../assets/img/7.jpg'},
+
   ]
  
   }}
