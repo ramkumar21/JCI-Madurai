@@ -13,13 +13,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { HometabPage } from '../pages/hometab/hometab';
 import { MyLomPage } from '../pages/my-lom/my-lom';
-import { EventsPage } from '../pages/events/events';
 import { HelpPage } from '../pages/help/help';
 import { AboutPage } from '../pages/about/about';
 import { CreedPage } from '../pages/creed/creed';
 import { KotpaduPage } from '../pages/kotpadu/kotpadu';
 import { ModalContentPage } from '../pages/about/modal-content';
+import { EventsPage } from '../pages/events/events';
 import { EventDetailPage} from '../pages/event-detail/event-detail';
+
 
 import { InAppBrowser } from '@ionic-native/in-app-browser';
 import { CallNumber } from '@ionic-native/call-number';

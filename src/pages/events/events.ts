@@ -43,4 +43,8 @@ export class EventsPage {
     this.navCtrl.push(EventDetailPage, {'eventId': eventId });
   }
 
+  takeToDummyDetail(){
+    this.navCtrl.push(EventDetailPage);
+  }
+
 }

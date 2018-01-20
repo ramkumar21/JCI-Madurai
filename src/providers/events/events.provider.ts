@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import firebase from 'firebase';
-import { Events } from '../../models/events.model';
-import { updateDate } from 'ionic-angular/util/datetime-util';
+// import { Events } from '../../models/events.model';
+// import { updateDate } from 'ionic-angular/util/datetime-util';
 
 @Injectable()
 export class EventsProvider{

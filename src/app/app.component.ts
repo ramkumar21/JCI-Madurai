@@ -31,7 +31,7 @@ export class MyApp {
       { title: 'Home', component: HometabPage },
       { title: 'MyLom', component: MyLomPage },
       { title: 'Events', component: EventsPage },
-      { title: 'Help', component: HelpPage },
+      { title: 'Help', component: HelpPage }
     ];
 
   }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,Platform } from 'ionic-angular';
-import { CallNumber } from '@ionic-native/call-number';
-import { EmailComposer } from '@ionic-native/email-composer';
+// import { CallNumber } from '@ionic-native/call-number';
+
 
 /**
  * Generated class for the MyLomPage page.
@@ -20,8 +20,8 @@ export class MyLomPage {
 	lomarea : string = "lgb";
   isAndroid: boolean = false;
 
-
-  constructor(public navCtrl: NavController, public navParams: NavParams,platform: Platform,  private emailComposer: EmailComposer, private callNumber: CallNumber) {
+  // , private callNumber: CallNumber
+  constructor(public navCtrl: NavController, public navParams: NavParams,platform: Platform) {
   this.isAndroid = platform.is('android');
   }
 

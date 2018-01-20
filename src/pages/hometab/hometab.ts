@@ -5,12 +5,6 @@ import { HomePage } from '../home/home';
 import { EventsPage } from '../events/events';
 import { AboutPage } from '../about/about';
 
-/**
- * Generated class for the HometabPage tabs.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({

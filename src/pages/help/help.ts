@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InAppBrowser } from "@ionic-native/in-app-browser";
-import { CallNumber } from '@ionic-native/call-number';
-import { EmailComposer } from '@ionic-native/email-composer';
+// import { CallNumber } from '@ionic-native/call-number';
+// import { EmailComposer } from '@ionic-native/email-composer';
 
 /**
  * Generated class for the HelpPage page.
@@ -19,8 +19,8 @@ import { EmailComposer } from '@ionic-native/email-composer';
 export class HelpPage {
 
 	url:string;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams, private inAppBrowser: InAppBrowser, private emailComposer: EmailComposer, private callNumber: CallNumber) { }
+  // private emailComposer: EmailComposer, private callNumber: CallNumber
+  constructor(public navCtrl: NavController, public navParams: NavParams, private inAppBrowser: InAppBrowser) { }
 
   call(){
  setTimeout(() => {
@@ -37,7 +37,7 @@ export class HelpPage {
   }
 
   openWebpage(url:string){
-  const browser = this.inAppBrowser.create('http://www.geomeoinformatics.com','_system');
+   this.inAppBrowser.create('http://www.geomeoinformatics.com','_system');
   }
 
 

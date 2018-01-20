@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 import { Platform, NavParams, ViewController } from 'ionic-angular';
-import { CallNumber } from '@ionic-native/call-number';
-import { EmailComposer } from '@ionic-native/email-composer';
+// import { CallNumber } from '@ionic-native/call-number';
+// import { EmailComposer } from '@ionic-native/email-composer';
 
 @Component({
   template:  `
@@ -42,8 +42,8 @@ export class CompanyPage {
     public platform: Platform,
     public params: NavParams,
     public viewCtrl: ViewController,
-    private emailComposer: EmailComposer, 
-    private callNumber: CallNumber
+    // private emailComposer: EmailComposer, 
+    // private callNumber: CallNumber
   ) {
     var characters = [
       {
